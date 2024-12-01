@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Application.Activities;
 using Application.Core;
 using AutoMapper;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
@@ -43,6 +45,9 @@ namespace API.Extensions
                     }
                 );
             });
+
+            services.AddFluentValidationAutoValidation();
+            services.AddValidatorsFromAssemblyContaining<Create>();
 
             return services;
         }
