@@ -54,6 +54,7 @@ export default observer(function ActivityForm() {
     if (activity.id.length === 0) {
       // eslint-disable-next-line prefer-const
       let newActivity = {
+        ...activity,
         id: uuid(),
       };
       createActivity(newActivity).then(() =>
