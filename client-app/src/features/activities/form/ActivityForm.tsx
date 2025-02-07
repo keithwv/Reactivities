@@ -8,7 +8,7 @@ import LoadingComponent from "../../../app/layout/LoadingComponent";
 import { v4 as uuid } from "uuid";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import MyTextInput from "../../../app/common/form/MyTextInputt";
+import MyTextInput from "../../../app/common/form/MyTextInput.tsx";
 import MyTextArea from "../../../app/common/form/MyTextArea";
 import { categoryOptions } from "../../../app/common/options/categoryOptions";
 import MySelectInput from "../../../app/common/form/MySelectInput";
